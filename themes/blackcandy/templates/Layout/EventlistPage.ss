@@ -28,12 +28,13 @@
                 <% if First %><blockquote class="sunday"><% end_if %>
                 
                 <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 
                 $Content
+                </p>
                 
 				<% if First %></blockquote><% end_if %>
                 <% if AboveImage %>$AboveImage.SetWidth(500)<% end_if %>
@@ -49,10 +50,11 @@
                 <% if First %><blockquote class="monday"><% end_if %>
                 <% if AboveImage %>$AboveImage<% end_if %><br />
                 <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 $Content
+                </p>
                 <% if BelowImage %>$BelowImage.SetWidth(380)<% end_if %>
                 <% if First %></blockquote><% end_if %>
                 
@@ -69,10 +71,11 @@
                 <% if First %><blockquote class="tuesday"><% end_if %>
                 <% if AboveImage %>$AboveImage<% end_if %><br />
                 <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 $Content
+                </p>
                 <% if BelowImage %>$BelowImage.SetWidth(400)<% end_if %>
                 <% if First %></blockquote><% end_if %>
             <% end_control %>
@@ -87,10 +90,11 @@
                 <% if First %><blockquote><% end_if %>
                 <% if AboveImage %>$AboveImage<% end_if %><br />
                 <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 $Content
+                </p>
                 <% if BelowImage %>$BelowImage.SetWidth(400)<% end_if %>
                 <% if First %></blockquote><% end_if %>
             <% end_control %>
@@ -103,10 +107,11 @@
                 <% if First %><blockquote><% end_if %>
                 <% if AboveImage %>$AboveImage<% end_if %><br />
                 <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 $Content
+                </p>
                 <% if BelowImage %>$BelowImage<% end_if %>
                 <% if First %></blockquote><% end_if %>
             <% end_control %>
@@ -120,12 +125,11 @@
             <% control Children %> <!-- controlling events inside each day -->
                 <% if First %><blockquote class="friday"><% end_if %>
                 <% if AboveImage %>$AboveImage<% end_if %><br />
-                <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 $Content
-          
+                </p>
                 <% if BelowImage %>$BelowImage.SetWidth(390)<% end_if %>
                 
                
@@ -143,10 +147,28 @@
                 <% if First %><blockquote><% end_if %>
                 <% if AboveImage %>$AboveImage<% end_if %><br />
                 <% if Official %><% end_if %>
-                <h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
                 <hr />
                 <h2>$Time </h2><h3>&bull; $Location</h3>
                 $Content
+                </p>
+                <% if BelowImage %>$BelowImage<% end_if %>
+                <% if First %></blockquote><% end_if %>
+            <% end_control %>
+            
+        
+        <% else_if Pos = 8 %><!-- Sunday -->
+        
+        
+        	 <% control Children %> <!-- controlling events inside each day -->
+                <% if First %><blockquote><% end_if %>
+                <% if AboveImage %>$AboveImage<% end_if %><br />
+                <% if Official %><% end_if %>
+                <p><h1<% if Official %><% else %> class="gray"<% end_if %>>$Title</h1>
+                <hr />
+                <h2>$Time </h2><h3>&bull; $Location</h3>
+                $Content
+                </p>
                 <% if BelowImage %>$BelowImage<% end_if %>
                 <% if First %></blockquote><% end_if %>
             <% end_control %>
