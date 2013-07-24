@@ -82,7 +82,7 @@ color:black;}
 <% end_control %>
 </ul> 
 <!--<img class="dates" src="$ThemeDir/images/newdates.png" width="348" height="32"/>-->
-<div id="dates">AUGUST 19, 2012 - AUGUST 25, 2012</div>
+<div id="dates">AUGUST 25, 2013 - SEPTEMBER 1, 2013</div>
 </div><!--end nav--> 
 <a href="/"><img class="logo" src="$ThemeDir/images/ribbon_new.png"/></a>
 </div><!--end logo--> 
