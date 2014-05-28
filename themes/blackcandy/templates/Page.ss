@@ -75,7 +75,7 @@ color:black;}
 <div id="header"> 
 <div id="logo"> 
 <div id="nav"> 
-<img class="events" src="$ThemeDir/images/uiowa.png" width="282" height="47" /> <!-- themes/welcome/ -->
+<a href="http://www.uiowa.edu/" target="_blank"><img class="events" src="$ThemeDir/images/uiowa.png" width="282" height="47" /></a> <!-- themes/welcome/ -->
 <ul id="nav-one" class="nav"> 
 <% control Menu(1) %>
 <li><a href="$Link">$MenuTitle</a></li> 
