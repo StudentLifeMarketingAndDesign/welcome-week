@@ -208,7 +208,6 @@ blockquote.saturday {
 	height:196px;
 	padding: 0px 15px 0px 15px;
 	width:994px;
-	margin-bottom:15px;
 	/*background: url(../images/header.jpg) no-repeat 0px 2px;*/
 }
 
@@ -308,7 +307,9 @@ div#contentwrap {
 }
 
 
-
+.header-image{
+display: block;
+}
 /* Bottom Divs */
 
 
@@ -318,11 +319,11 @@ div#contentwrap {
 	width:1018px;
 	height:auto;
 	text-align:left;
-	border:1px solid black;
-	margin: 10px 0px 10px 0px;
+	margin: 0;
 background-image: url(../images/green4.png);
 	background-repeat: no-repeat;
 	background-position:bottom;
+	margin-bottom: 10px;
 }
 
 #right-column {
@@ -389,7 +390,12 @@ text-decoration:underline;
   padding:3px 20px 3px 20px;
   margin-right:5px;
   position:relative;
-  border:1px solid black;
+  background: rgba(255,255,255,0.3);
+  
+}
+
+.nav li:hover{
+	background: rgba(255,255,255,0.6);
 }
 .nav li a, .nav li a:link, .nav li a:active, .nav li a:visited {
   font: normal 12px/25px arial;
