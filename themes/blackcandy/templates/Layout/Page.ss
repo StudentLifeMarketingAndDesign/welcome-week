@@ -8,6 +8,7 @@ $(function() {
 	<div id="tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
 	<div id="event">
 		$Content
+		$Form
 	</div>
 	</div>
 </div> 

@@ -84,7 +84,7 @@
             </div><!--end header-->
             <div id="bottom_wrapper">
                 <div class="demo">
-                    $Layout $Form
+                    $Layout
                 </div><!-- End demo -->
             </div>
         </div><!--end bodywrap-->
