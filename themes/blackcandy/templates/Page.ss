@@ -71,7 +71,7 @@
                         <ul id="nav-one"
                             class="nav">
                             <% control Menu(1) %>
-                            <li>
+                            <li class="$LinkOrCurrent">
                                 <a href="$Link">$MenuTitle</a>
                             </li><% end_control %>
                         </ul>
