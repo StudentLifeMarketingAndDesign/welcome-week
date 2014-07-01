@@ -1,15 +1,3 @@
-<!--<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
-<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-1">SATURDAY - 21</a></li>
-<li class="ui-state-default ui-corner-top"><a href="#tabs-2">SUNDAY - 22</a></li>
-<li class="ui-state-default ui-corner-top"><a href="#tabs-3">MONDAY - 23</a></li>
-<li class="ui-state-default ui-corner-top"><a class="selected" href="#tabs-4">TUESDAY - 24</a></li>
-<li class="ui-state-default ui-corner-top"><a href="#tabs-5">WEDNESDAY - 25</a></li>
-<li class="ui-state-default ui-corner-top"><a href="#tabs-6">THURSDAY - 26</a></li>
-<li class="ui-state-default ui-corner-top"><a href="#tabs-7">FRIDAY - 27</a></li>
-<li class="ui-state-default ui-corner-top"><a href="#tabs-8">SATURDAY - 28</a></li>
-</ul>-->
-
 <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
 <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
 <% control Children %><li class="ui-state-default ui-corner-top <% if First %>ui-tabs-selected ui-state-active<% end_if %>"><a href="#tabs-$ID">$MenuTitle</a></li>
@@ -185,8 +173,3 @@
 <% end_control %>
 
 </div>
-<script type="text/javascript">
-$(function() {
-	$("#tabs").tabs();
-});
-</script>
