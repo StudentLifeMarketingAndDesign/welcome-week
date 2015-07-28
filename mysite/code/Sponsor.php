@@ -1,26 +1,29 @@
 <?php
-class Page extends SiteTree {
+class SponsorPage extends Page {
 
 	private static $db = array(
+		"SponsorUrl" => "Text",
 	);
 
 	private static $has_one = array(
-		"PagePhoto" => "Image",
+		"SponsorPhoto" => "Image",
 	);
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 
+		$fields->removeByName("Content");
 		$fields->removeByName("Metadata");
 
-		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Photo"));
-
+		$fields->addFieldToTab("Root.Main", new UploadField("SponsorPhoto", "Sponsor Photo"));
+		$fields->addFieldToTab("Root.Main", new TextField("SponsorUrl", "Sponsor URL (http://www.domain.com)"));
+		
 		return $fields;
-
+		
 	}
 
 }
-class Page_Controller extends ContentController {
+class SponsorPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -37,19 +40,11 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
-	);
 
 	public function init() {
 		parent::init();
-		Requirements::block('division-bar/css/_division-bar.css');
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
-	}
-
-	public function Buttons(){
-		$buttons = Button::get()->sort('Year', 'DESC');
-		if($buttons) return $buttons;
 	}
 
 }

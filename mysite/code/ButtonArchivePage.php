@@ -1,26 +1,27 @@
 <?php
-class Page extends SiteTree {
+class ButtonArchivePage extends Page {
 
 	private static $db = array(
 	);
 
 	private static $has_one = array(
-		"PagePhoto" => "Image",
 	);
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 
-		$fields->removeByName("Metadata");
+		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
+		$gridFieldConfig->addComponent(new GridFieldBulkUpload());
+		$gridFieldConfig->addComponent(new GridFieldBulkManager());
+		$gridField = new GridField("Buttons", "Buttons", Button::get(), $gridFieldConfig);
 
-		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Photo"));
-
+		$fields->addFieldToTab("Root.Main", $gridField, "Content");
+		
 		return $fields;
-
 	}
 
 }
-class Page_Controller extends ContentController {
+class ButtonArchivePage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -37,19 +38,11 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
-	);
 
 	public function init() {
 		parent::init();
-		Requirements::block('division-bar/css/_division-bar.css');
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
-	}
-
-	public function Buttons(){
-		$buttons = Button::get()->sort('Year', 'DESC');
-		if($buttons) return $buttons;
 	}
 
 }

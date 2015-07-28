@@ -1,26 +1,38 @@
 <?php
-class Page extends SiteTree {
+class CouncilMember extends Page {
 
 	private static $db = array(
+		"Name" => "Text",
+		"Position" => "Text",
+		"EmailAddress" => "Text",
+
 	);
 
 	private static $has_one = array(
-		"PagePhoto" => "Image",
+		"CouncilPhoto" => "Image",
 	);
+
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 
+		$fields->removeByName("Content");
 		$fields->removeByName("Metadata");
+		$fields->removeByName("PagePhoto");
 
-		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Photo"));
+		$fields->addFieldToTab("Root.Main", new TextField("Position", "Position"));
+		$fields->addFieldToTab("Root.Main", new TextField("EmailAddress", "Email address"));
+		$fields->addFieldToTab("Root.Main", new UploadField("CouncilPhoto", "Photo"));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Description"));
 
 		return $fields;
 
 	}
 
+	//private static $allowed_children = array("");
+
 }
-class Page_Controller extends ContentController {
+class CouncilMember_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -42,14 +54,8 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
-		Requirements::block('division-bar/css/_division-bar.css');
-		// You can include any CSS or JS required by your project here.
-		// See: http://doc.silverstripe.org/framework/en/reference/requirements
-	}
 
-	public function Buttons(){
-		$buttons = Button::get()->sort('Year', 'DESC');
-		if($buttons) return $buttons;
+
 	}
 
 }

@@ -1,26 +1,23 @@
 <?php
-class Page extends SiteTree {
+class CategoryPage extends Page {
 
 	private static $db = array(
 	);
 
 	private static $has_one = array(
-		"PagePhoto" => "Image",
+		"Category" => "Category"
 	);
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-
-		$fields->removeByName("Metadata");
-
-		$fields->addFieldToTab("Root.Main", new UploadField("PagePhoto", "Photo"));
-
+		$categoryField = new DropdownField('CategoryID', 'Display the following category on this page:', Category::get()->map('ID', 'Title'));
+		$fields->addFieldToTab("Root.Main", $categoryField, "Content");
+		
 		return $fields;
-
 	}
 
 }
-class Page_Controller extends ContentController {
+class CategoryPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -37,19 +34,11 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
-	);
 
 	public function init() {
 		parent::init();
-		Requirements::block('division-bar/css/_division-bar.css');
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
-	}
-
-	public function Buttons(){
-		$buttons = Button::get()->sort('Year', 'DESC');
-		if($buttons) return $buttons;
 	}
 
 }
