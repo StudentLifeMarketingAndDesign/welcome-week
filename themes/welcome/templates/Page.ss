@@ -2,12 +2,12 @@
 <!--[if lt IE 9]>         <html lang="en" class="lt-ie9 no-js"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <% base_tag %>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><% if $ClassName == 'HomePage' %>Homecoming at Iowa<% else %>$Title | Homecoming at Iowa<% end_if %></title>
+<title>$SiteConfig.Title</title>
 <!--
 
 MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
@@ -51,20 +51,22 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <body class="$ClassName">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<% include DivisionBar %>
-	<% include Header %>
 
+	<article id="index" data-section="">
 
-	<div class="hero-wrapper">
-		<img src="{$ThemeDir}/images/homecoming-slide-1.jpg" alt="">
-	</div>
+	</article>
+	<article id="about">
+
+	</article>
 
 	<section class="main" id="main-content" tabindex="-1" role="main">
 		$Layout
 	</section>
 
-	<% include TodaysEvents %>
+	<article id="community" data-section="">
 
-	<% include Sponsors %>
+	</article>
+
 	<% include Footer %>
 
 
@@ -72,7 +74,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-
 	<% include GoogleAnalytics %>
 
 </body>

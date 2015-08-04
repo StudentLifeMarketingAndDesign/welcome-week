@@ -33,7 +33,7 @@ division-project/
 division-bar
 vendor/composer/
 vendor/autoload.php
-
+cache/
 node_modules
 npm-debug.log
 tagfield/

@@ -8,11 +8,6 @@
 				</a>
 			</h1>
 			<div class="audience-wrapper">
-				<ul class="audience-nav">
-					<li><a href="students/">Students</a></li>
-					<li><a href="faculty-and-staff/">Faculty &amp; Staff</a></li>
-					<li><a href="alumni-and-friends/">Alumni &amp; Public</a></li>
-				</ul>
 				<p class="header-date">Oct. 3 - Oct. 10, 2015</p>
 			</div>
 		</div>

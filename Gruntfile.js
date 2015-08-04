@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          '<%= project.src %>/js/plugins/*.js',
+          'division-bar/js/division-bar.js',
           '<%= project.src %>/js/main.js'
         ],
         dest: '<%= project.src %>/js/build/production.js'

@@ -2,12 +2,12 @@
 <!--[if lt IE 9]>         <html lang="en" class="lt-ie9 no-js"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <% base_tag %>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><% if $ClassName == 'HomePage' %>Homecoming at Iowa<% else %>$Title | Homecoming at Iowa<% end_if %></title>
+<title>$SiteConfig.Title</title>
 <!--
 
 MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
@@ -59,9 +59,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 		$Layout
 	</section>
 
-	<% include TodaysEvents %>
-
-	<% include Sponsors %>
 	<% include Footer %>
 
 
@@ -69,7 +66,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-	<script src="division-bar/js/division-bar.js"></script>
 	<% include GoogleAnalytics %>
 
 </body>

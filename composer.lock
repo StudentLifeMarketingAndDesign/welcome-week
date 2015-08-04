@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "65b194ef2807b387f9f0bde9d2c4a3f3",
+    "hash": "c73224375b2ad4e85db995868b63a52c",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -142,6 +142,38 @@
                 "zikula"
             ],
             "time": "2015-06-13 15:30:38"
+        },
+        {
+            "name": "md/ac-json-events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
+                "reference": "ca3ee47845fcde3cdb0bc70337b289f337976b45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/ca3ee47845fcde3cdb0bc70337b289f337976b45",
+                "reference": "ca3ee47845fcde3cdb0bc70337b289f337976b45",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "description": "After Class JSON Display Module",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
+            },
+            "time": "2015-08-04 19:45:01"
         },
         {
             "name": "md/division-bar",
@@ -320,12 +352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-tagfield.git",
-                "reference": "5473c94a58f7e16ff1fc5a7a062b30e7b6fce7fd"
+                "reference": "3bb0715835e03050efa11763fa40fbc5dc77a35b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/5473c94a58f7e16ff1fc5a7a062b30e7b6fce7fd",
-                "reference": "5473c94a58f7e16ff1fc5a7a062b30e7b6fce7fd",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/3bb0715835e03050efa11763fa40fbc5dc77a35b",
+                "reference": "3bb0715835e03050efa11763fa40fbc5dc77a35b",
                 "shasum": ""
             },
             "require": {
@@ -349,7 +381,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2015-07-20 20:40:35"
+            "time": "2015-07-30 04:41:38"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -392,6 +424,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "md/ac-json-events": 20,
         "silverstripe/tagfield": 20
     },
     "prefer-stable": false,

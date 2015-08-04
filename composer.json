@@ -5,6 +5,7 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.1.13",
 		"silverstripe/framework": "3.1.13",
+		"md/ac-json-events" : "dev-master",
 		"silverstripe/event-calendar": "*",
 		"colymba/gridfield-bulk-editing-tools": "*",
 		"silverstripe/tagfield": "dev-master",
@@ -12,10 +13,14 @@
 		"unclecheese/betterbuttons" : "*"
 	},
 	"config": {
-		"process-timeout": 600	
+		"process-timeout": 600
 	},
 	"minimum-stability": "dev",
     "repositories": [
+    		{
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
+        },
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"

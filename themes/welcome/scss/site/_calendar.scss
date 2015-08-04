@@ -1,72 +1,55 @@
-/* ---------------------------------------------------------------
-Schedule
---------------------------------------------------------------- */
-.event-list {
-	border-top: 4px solid $yellow;
-	padding: 1em 0;
-}
-.list-item {
-	border-bottom: 1px solid #eee;
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-}
-.list-item:last-of-type {
-	border-bottom: none;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-.list-item .img {
-	background: #fff;
-	padding: 5px;
-	border: 1px solid #ddd;
-	overflow: hidden;
-	display: block;
-	float: left;
-	& img {
-		display: block;
-		width: 120px;
-		@media screen and (min-width: $break-medium) {
-			width: auto;
-		}
-	}
-}
-.list-item .list-content {
-	margin-left: 145px;
-	@media screen and (min-width: $break-medium) {
-		margin-left: 230px;
-	}
-}
-.list-item .title {
-	font-size: 20px;
-	line-height: 1.3;
+.eventlist {
 	margin: 0;
-	& a {
-		color: #333;
-	}
-	@media screen and (min-width: $break-medium) {
-		font-size: 26px;
-	}
+	list-style: none;
 }
-.list-item .meta {
-	font-size: 13px;
-	line-height: 1.5;
-	margin-bottom: 1em;
-	@media screen and (min-width: $break-medium) {
-		font-size: 15px;
-	}
+.event-info {
+	display: none;
 }
-.list-item .list-desc {
-	margin-bottom: 0;
-}
-.category-events-title {
-	margin-bottom: 0;
+#index {
+    padding-top: 54px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    min-height: 700px;
+    margin-bottom: -9.3%;
+    background-image: url(../images/blockparty.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-/* ---------------------------------------------------------------
-Event Page
---------------------------------------------------------------- */
-.event-img img {
-	display: block;
-	margin-bottom: 1.5em;
+#about {
+	background: #fff;
+	position: relative;
+	z-index: 10;
+	padding-bottom: 50px;
+	-webkit-clip-path: polygon(0% 0%, 50% 10vw, 100% 0%, 100% 100%, 0 100%, 0% 0%);
+	clip-path: polygon(0% 0%, 50% 10vw, 100% 0%, 100% 100%, 0 100%, 0% 0%);
+	margin-top: -10vw;
+	padding-top: 10vw;
 }
 
+#community {
+    background: #fff;
+    -webkit-clip-path: polygon(0 10vw, 50% 0%, 100% 10vw, 100% 100%, 0 100%, 0 10vw);
+    clip-path: polygon(0 10vw, 50% 0%, 100% 10vw, 100% 100%, 0 100%, 0 10vw);
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    position: relative;
+    z-index: 60;
+}
+
+footer.global {
+    background-image: url(../images/pentacrest.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #114b43;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 10vw, 50% 0%, 100% 10vw, 100% 100%, 0 100%, 0 10vw);
+    clip-path: polygon(0 10vw, 50% 0%, 100% 10vw, 100% 100%, 0 100%, 0 10vw);
+    margin-top: -10vw;
+    padding-top: 10vw;
+    position: relative;
+    z-index: 70;
+    min-height: 600px;
+}
