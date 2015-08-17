@@ -14,33 +14,29 @@
 
 /* Element Imports
 -------------------------------------------*/
-@import "elements/_button-bootstrap";
-@import "elements/_form-bootstrap";
+/*@import "elements/_button-bootstrap";*/
+/*@import "elements/_form-bootstrap";*/
 @import "elements/_grid-bootstrap";
 /*@import "elements/_grid-simple";*/
-@import "elements/_tables";
-@import "elements/_glyphicons-bootstrap";
+/*@import "elements/_tables";*/
+/*@import "elements/_glyphicons-bootstrap";*/
 /*@import "elements/_nav-bootstrap";*/
 
 
 /* Plugins
 -------------------------------------------*/
-@import "plugins/_slick.scss";
-@import "plugins/jquery.fancybox";
-@import "plugins/jquery.fancybox-buttons";
+/*@import "plugins/_slick.scss";*/
+/*@import "plugins/jquery.fancybox";*/
+/*@import "plugins/jquery.fancybox-buttons";*/
 
 
 /* Layout
 -------------------------------------------*/
-@import "site/_home";
 @import "site/component";
 @import "site/_header";
 @import "site/_footer";
-@import "site/_nav";
+/*@import "site/_nav";*/
 @import "site/_calendar";
-@import "site/sidenav";
-@import "site/_todaysevents";
-@import "site/_breadcrumbs";
 
 /* Site specific styles
 -------------------------------------------*/

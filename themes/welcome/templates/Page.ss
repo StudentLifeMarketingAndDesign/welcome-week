@@ -40,13 +40,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
    <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
    <script src="{$ThemeDir}/js/ie/respond.min.js"></script>
 <![endif]-->
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-<![endif]-->
 </head>
 
 <body class="$ClassName">
@@ -54,7 +47,11 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<% include DivisionBar %>
 
 	<article id="index" data-section="">
-
+		<div class="inner">
+			<img src="{$ThemeDir}/images/welcome-week.png" alt="Welcome Week">
+			<h1><span>Welcome</span> Week</h1>
+			<h4>August 24, 2014 &ndash; August 31, 2014</h4>
+		</div>
 	</article>
 	<article id="about">
 

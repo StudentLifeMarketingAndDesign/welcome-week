@@ -1,18 +1,29 @@
 <li>
 	<% loop $Dates %>
-		<% with $StartDateTime %>
+
 		<time class="cbp_tmtime" datetime="$Format(c)">
-			<span>$Format(n)/$Format(j)/$Format(Y)</span>
-			<span>$Format("g:i A")<% if $EndTime %><% with $EndTime %>&ndash;$Format("g:i A")<% end_with %><% end_if %></span>
+			<span><% with $StartDateTime %>$Format(n)/$Format(j)/$Format(Y)<% end_with %></span>
+			<span>
+				<% with $StartDateTime %>
+					 $Format("g:i A")<% end_with %><% if $EndTime %><% with $EndTime %>&ndash;$Format("g:i A")
+					<% end_with %>
+				<% end_if %>
+				<% if $EndDate %>
+					until
+					<% with $EndDate %>
+						$Format("g:i A")
+					<% end_with %>
+				<% end_if %>
+			</span>
 		</time>
-		<% end_with %>
+
 	<% end_loop %>
-	<div class="cbp_tmicon cbp_tmicon-phone"></div>
+	<div class="cbp_tmicon cbp_tmicon-time"></div>
 	<div class="cbp_tmlabel">
 		<h2>$Title</h2>
 		<div class="clearfix">
 			<% if $Image %>
-				<img src="$Image.URL" alt="$Title" width="150" class="right">
+				<img src="$Image.URL" alt="$Title" class="event-img">
 			<% end_if %>
 
 			$Content

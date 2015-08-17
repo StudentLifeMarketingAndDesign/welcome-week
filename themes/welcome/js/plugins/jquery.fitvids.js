@@ -1,33 +1,3 @@
-$(document).ready(function() {
-
-    // Hide the directory navigation
-    // $('.division-directory').hide();
-
-
-    // Show/Hide the directory navigation on-click
-    $('.directory-toggle').click(function() {
-        $(this).toggleClass("active");
-        $('.division-directory').toggleClass("active");
-        return false;
-    });
-
-
-    // For small screens - show/hide the search on-click
-    $('.search-toggle').click(function() {
-        $(this).toggleClass('active');
-        $('.division-search').slideToggle();
-        return false;
-    });
-
-
-    // For small screens - show the directory
-    $('.division-menu').on('click', '.has-subnav a', function() {
-        $(this).next().slideToggle('slow');
-        $(this).toggleClass('active');
-
-    });
-
-});
 /*jshint browser:true */
 /*!
 * FitVids 1.1
@@ -110,17 +80,3 @@ $(document).ready(function() {
   };
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
-
-$(window).load(function() {
-
-	// add js class to body if javascript enabled
-	$('html').removeClass('no-js');
-
-	// FITVIDS.JS
-	$(".cbp_tmlabel").fitVids();
-
-	$('.nav-title a').click(function() {
-		$('.nav-main-wrapper').toggleClass('expand');
-		return false;
-	});
-});

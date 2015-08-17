@@ -19,6 +19,7 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'division-bar/js/division-bar.js',
+          '<%= project.src %>/js/plugins/jquery.fitvids.js',
           '<%= project.src %>/js/main.js'
         ],
         dest: '<%= project.src %>/js/build/production.js'
