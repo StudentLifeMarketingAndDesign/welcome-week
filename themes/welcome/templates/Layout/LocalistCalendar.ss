@@ -5,7 +5,7 @@
 		<br />
 		<div class="main">
 			<ul class="cbp_tmtimeline">
-				<% loop $EventListByDate("2015-08-27") %>
+				<% loop $EventList %>
 					<% include EventSummary %>
 				<% end_loop %>
 			</ul>
