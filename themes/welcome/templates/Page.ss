@@ -66,7 +66,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 			<div class="col-md-8 col-md-offset-2">
 				<br />
 				<a href="http://studentlife.uiowa.edu/"><img src="{$ThemeDir}/images/dosl-uiowa.jpg" alt="division of student life" style="margin: 0 auto;display:block;"></a>
-				<p>Individuals with disabilities are encouraged to attend all University of Iowa sponsored events. If you are a person with a disability who requires a reasonable accommodation in order to participate in this program, please contact the sponsoring department or contact person listed in advance of the event.</p>
+				<p>Individuals with disabilities are encouraged to attend all University of Iowa sponsored events. If you are a person with a disability who requires a reasonable accommodation in order to participate in this program, please contact the sponsoring department, contact person listed in advance of the event, or call 319-335-3059.</p>
 				<p>&copy; The University of Iowa $Now.Year$Format(Y). All rights reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" target="_blank">Privacy Policy</a></p>
 			</div>
 		</div>
