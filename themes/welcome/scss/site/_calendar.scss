@@ -46,9 +46,10 @@
 
 
 .event-img {
+    height: auto;
+    width: 250px;
     @media(min-width: $break-small) {
         float: right;
-        width: 250px;
         margin: 0 0 1em 1em;
     }
 }

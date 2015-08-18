@@ -10,4 +10,11 @@ $(window).load(function() {
 		$('.nav-main-wrapper').toggleClass('expand');
 		return false;
 	});
+
+	// LAZYLOAD
+	$(function() {
+		$("img.lazy").lazyload({
+			threshold : 200
+		});
+	});
 });

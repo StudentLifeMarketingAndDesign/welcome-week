@@ -23,7 +23,7 @@
 		<h2>$Title</h2>
 		<div class="clearfix">
 			<% if $Image %>
-				<img src="$Image.URL" alt="$Title" class="event-img">
+				<img data-original="$Image.URL" alt="$Title" class="lazy event-img">
 			<% end_if %>
 
 			$Content
@@ -53,30 +53,3 @@
 		</div>
 	</div>
 </li>
-
-
-
-
-<!-- Dates
-<% loop $Dates %>
-	<p class="eventlist-date">
-		<% with $StartDateTime %>
-			<time itemprop="startDate" datetime="$Format(c)">
-				$Format(l), $Format(F) $Format(j)
-			</time>
-			 <span class="eventlist-time">$Format("g:i A")<% end_with %><% if $EndTime %><% with $EndTime %>&ndash;$Format("g:i A")
-			<% end_with %>
-		<% end_if %>
-		</span>
-		<% if $EndDate %>
-			until
-			<% with $EndDate %>
-				<time itemprop="endDate" datetime="$Format(c)">
-					$Format(l), $Format(F) $Format(j)
-				</time>
-				<span class="eventlist-time">$Format("g:i A")</span>
-			<% end_with %>
-		<% end_if %>
-	</p>
-<% end_loop %>
- -->
