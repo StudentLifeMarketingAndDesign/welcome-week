@@ -13,15 +13,55 @@
 	z-index: 70;
 	min-height: 600px;
 }
-.footer p {
+.footer-content {
 	background-color: #222;
 	color: #aaa;
-	width: 100%;
-	margin: 0;
-	font-size: 14px;
-	padding: 5px;
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+.footer p {
+	color: #aaa;
+	margin: 0;
+	font-size: 14px;
+
+}
+.accomidations p {
+	font-size: 14px;
+	text-align: center;
+}
+.md-bar{
+	color: white;
+	padding: 5px 0;
+
+	p{
+
+		text-align: center;
+		margin: 0;
+
+		font-size: 13px;
+		a{
+			color: #4DA2CD;
+		}
+
+		span{
+		-webkit-transition: .2s all linear;
+		-moz-transition: .2s all linear;
+		-o-transition: .2s all linear;
+		transition: .2s all linear;
+			@media screen and(min-width: 768px){
+				margin-left: 5px;
+			}
+		}
+	}
+	.md-logo{
+		max-width: 65px;
+		display: inline;
+		margin: auto;
+		height: 27px;
+		vertical-align: middle;
+	}
 }
