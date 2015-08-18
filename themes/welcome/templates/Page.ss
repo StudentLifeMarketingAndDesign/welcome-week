@@ -50,7 +50,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 		<div class="inner">
 			<img src="{$ThemeDir}/images/welcome-week.png" alt="Welcome Week">
 			<h1><span>Welcome</span> Week</h1>
-			<h4>August 23, 2014 &ndash; August 29, 2014</h4>
+			<h4>August 23, 2015 &ndash; August 29, 2015</h4>
 		</div>
 	</article>
 	<article id="about">
