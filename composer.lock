@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "f1035f06a3703ad3ad6c2f978e157d9e13755500"
+                "reference": "4513f63ed3da443b307186696afbd492205b6fe3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/f1035f06a3703ad3ad6c2f978e157d9e13755500",
-                "reference": "f1035f06a3703ad3ad6c2f978e157d9e13755500",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/4513f63ed3da443b307186696afbd492205b6fe3",
+                "reference": "4513f63ed3da443b307186696afbd492205b6fe3",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2015-03-15 17:13:57"
+            "time": "2015-09-01 09:29:40"
         },
         {
             "name": "composer/installers",
@@ -181,12 +181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "0728f204b28e5d3e6d06abede903108454eb455d"
+                "reference": "5315e4525031bbc4a7a54895bda531aef9da93ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/0728f204b28e5d3e6d06abede903108454eb455d",
-                "reference": "0728f204b28e5d3e6d06abede903108454eb455d",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/5315e4525031bbc4a7a54895bda531aef9da93ae",
+                "reference": "5315e4525031bbc4a7a54895bda531aef9da93ae",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +205,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2015-06-04 14:15:02"
+            "time": "2015-08-28 19:47:42"
         },
         {
             "name": "silverstripe/cms",
@@ -352,12 +352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-tagfield.git",
-                "reference": "3bb0715835e03050efa11763fa40fbc5dc77a35b"
+                "reference": "fc3e96a41b725eee6db0180b942d3177c9c640e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/3bb0715835e03050efa11763fa40fbc5dc77a35b",
-                "reference": "3bb0715835e03050efa11763fa40fbc5dc77a35b",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/fc3e96a41b725eee6db0180b942d3177c9c640e6",
+                "reference": "fc3e96a41b725eee6db0180b942d3177c9c640e6",
                 "shasum": ""
             },
             "require": {
@@ -381,7 +381,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2015-07-30 04:41:38"
+            "time": "2015-08-27 01:28:59"
         },
         {
             "name": "unclecheese/betterbuttons",
