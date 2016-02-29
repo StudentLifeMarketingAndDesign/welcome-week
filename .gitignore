@@ -38,3 +38,5 @@ node_modules
 npm-debug.log
 tagfield/
 ac-json-events
+reports/
+siteconfig/
