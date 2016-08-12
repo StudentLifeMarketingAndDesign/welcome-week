@@ -40,3 +40,5 @@ tagfield/
 ac-json-events
 reports/
 siteconfig/
+
+vendor/johngrogg/ics-parser/
