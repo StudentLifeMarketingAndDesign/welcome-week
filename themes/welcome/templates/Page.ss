@@ -33,7 +33,6 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <% include Typekit %>
 <!-- CSS -->
 <link rel="stylesheet" href="{$ThemeDir}/css/master.css">
-<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 <script src="{$ThemeDir}/js/plugins/modernizr.custom.js"></script>
 <!-- JS -->
 <!--[if lt IE 9]>
