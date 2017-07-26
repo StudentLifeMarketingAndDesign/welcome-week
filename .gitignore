@@ -7,8 +7,6 @@ silverstripe-cache
 .settings
 .idea
 .DS_Store
-
-
 .sass-cache/*
 *.scssc
 html/*
@@ -40,5 +38,8 @@ tagfield/
 ac-json-events
 reports/
 siteconfig/
-
 vendor/johngrogg/ics-parser/
+activedirectory/
+multivaluefield/
+queuedjobs/
+/vendor

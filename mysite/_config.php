@@ -20,3 +20,4 @@ SiteConfig::add_extension('SiteConfigExtension');
 if(Director::isLive()) {
 	Director::forceSSL();
 }
+Authenticator::set_default_authenticator('SAMLAuthenticator');
