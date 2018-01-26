@@ -32,7 +32,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 <!-- Typekit Fonts -->
 <% include Typekit %>
 <!-- CSS -->
-<link rel="stylesheet" href="{$ThemeDir}/css/master.css">
+<link rel="stylesheet" href="{$ThemeDir}/css/main.css">
 <script src="{$ThemeDir}/js/plugins/modernizr.custom.js"></script>
 <!-- JS -->
 <!--[if lt IE 9]>
@@ -43,13 +43,12 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 
 <body class="$ClassName">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
-	<% include DivisionBar %>
+	<% include UiowaBar %>
 
 	<article id="index" data-section="">
 		<div class="inner">
 			<img src="{$ThemeDir}/images/welcome-week.png" alt="Welcome Week">
 			<h1><span>Welcome</span> Week</h1>
-			<h4>August 23, 2015 &ndash; August 29, 2015</h4>
 		</div>
 	</article>
 	<article id="about">
@@ -84,7 +83,7 @@ MMMMMMMM               MMMMMMMM                               DDDDDDDDDDDDD
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-	<% include GoogleAnalytics %>
+	$Analytics
 
 </body>
 </html>
